@@ -8,7 +8,7 @@ function TableResults(props) {
         <tr>
           {/* <th scope="row">1</th> */}
           <td><img src={employee.image} alt={employee.name}></img></td>
-          <td>{employee.name}</td>
+          <td>{employee.firstName} {employee.lastName}</td>
           <td>{employee.phone}</td>
           <td><a href={employee.email}>{employee.email}</a></td>
           <td>{employee.dob.split('T')[0]}</td>

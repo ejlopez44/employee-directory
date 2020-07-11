@@ -31,10 +31,8 @@ class Container extends Component {
   // Need a function to handle search filtering
   handleInputChange = event => {
     this.setState({ search: event.target.value.toLowerCase() }, (set) => {
-      console.log(this.state.search)
-      // now needs to return a filtered array
-      let searchResults = this.state.employees.filter(employee => employee.name.toLowerCase().includes(this.state.search))
-      console.log(searchResults)
+      let criteria = this.state.search
+      let searchResults = this.state.employees.filter(employee => employee.firstName.toLowerCase().startsWith(criteria) || employee.lastName.toLowerCase().startsWith(criteria))
       return this.setState({ filtered: searchResults })
     });
   };

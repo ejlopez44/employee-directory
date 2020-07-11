@@ -12,7 +12,8 @@ export default {
             return employees.map(employee => {
                 return {
                     image: employee.picture.thumbnail,
-                    name: `${employee.name.first} ${employee.name.last}`,
+                    firstName: employee.name.first,
+                    lastName: employee.name.last,
                     phone: employee.phone,
                     email: employee.email,
                     dob: employee.dob.date,
