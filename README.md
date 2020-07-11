@@ -5,7 +5,7 @@
 
 ## Description
 
-You can view the deployed application here at:
+You can view the deployed application here at: https://ejl-emp-dir.herokuapp.com/
 
 This employee directory is a React Application that displays a large list of "employees". Using React State, the list can be filtered by search and sorted by it's headers. The list of employees is powered by making an API call to the RandomUser API and rendering all 200 users to the DOM. 
 
