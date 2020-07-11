@@ -10,7 +10,7 @@ function TableResults(props) {
           <td><img src={employee.image} alt={employee.name}></img></td>
           <td>{employee.name}</td>
           <td>{employee.phone}</td>
-          <td>{employee.email}</td>
+          <td><a href={employee.email}>{employee.email}</a></td>
           <td>{employee.dob.split('T')[0]}</td>
         </tr>
       ))}

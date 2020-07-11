@@ -1,0 +1,11 @@
+body {
+    background-color: darkslateblue;
+}
+
+.container {
+    /* margin: 3rem 3rem 3rem 3rem; */
+    border-color: darkslategray;
+    border-style: solid;
+    border-width: 2rem 2rem 2rem 2rem;
+    background-color: whitesmoke;
+}

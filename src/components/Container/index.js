@@ -3,6 +3,7 @@ import API from '../../utils/API';
 import SearchHeader from '../SearchHeader';
 import TableHeader from '../TableHeader';
 import TableResults from '../TableResults';
+import './style.css'
 
 class Container extends Component {
   // temporary idea for state of table
@@ -69,7 +70,7 @@ class Container extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <SearchHeader handleInputChange={this.handleInputChange} />
         <table className="table" >
           <TableHeader sortTable={this.sortTable} />

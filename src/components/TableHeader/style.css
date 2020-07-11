@@ -5,3 +5,13 @@ th {
     cursor: pointer;
     color: black
 }
+
+.sortBtn:hover::after {
+    font-family: FontAwesome;
+    content: "\f0dc";
+    position: relative;
+    right: -1em;
+}
+
+  
+

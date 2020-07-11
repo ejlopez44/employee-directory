@@ -3,7 +3,7 @@ import './style.css';
 function TableHeader(props) {
     return (
         <thead>
-            <tr>
+            <tr className="">
                 {/* <th scope="col">#</th> */}
                 <th scope="col">Photo</th>
                 <th className="sortBtn" onClick={() => props.sortTable('name')} scope="col">Name</th>
