@@ -1,7 +1,7 @@
 
 # Employee Directory
 
-![Employee Directory Main Page Image](https://github.com/ejlopez44/budget-tracker/blob/master/public/images/main.png)
+![Employee Directory Main Page Image](https://github.com/ejlopez44/employee-directory/blob/master/public/assets/images/Screen%20Shot%202020-07-11%20at%2012.45.20%20AM.png)
 
 ## Description
 
