@@ -1,0 +1,7 @@
+th {
+    color: rgb(100, 100, 100)
+}
+.sortBtn:hover {
+    cursor: pointer;
+    color: black
+}
