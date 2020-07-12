@@ -30,12 +30,19 @@ class Container extends Component {
 
   // Need a function to handle search filtering
   handleInputChange = event => {
+    event.preventDefault();
     this.setState({ search: event.target.value.toLowerCase() }, (set) => {
       let criteria = this.state.search
       let searchResults = this.state.employees.filter(employee => employee.firstName.toLowerCase().startsWith(criteria) || employee.lastName.toLowerCase().startsWith(criteria))
       return this.setState({ filtered: searchResults })
     });
   };
+
+  // Prevent searchbar from allowing refresh
+  ignoreSubmit = event => {
+    event.preventDefault();
+    return
+  }
 
   sortTable = async (sortBy) => {
     const criteria = sortBy
@@ -69,7 +76,7 @@ class Container extends Component {
   render() {
     return (
       <div className="container">
-        <SearchHeader handleInputChange={this.handleInputChange} />
+        <SearchHeader handleInputChange={this.handleInputChange} ignoreSubmit={this.ignoreSubmit} />
         <table className="table" >
           <TableHeader sortTable={this.sortTable} />
           <TableResults results={this.state.filtered} />

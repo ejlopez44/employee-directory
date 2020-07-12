@@ -13,5 +13,11 @@ th {
     right: -1em;
 }
 
+#lastNM:hover::after {
+    font-family: FontAwesome;
+    content: "\f0dc   ...by Last Name";
+    position: relative;
+    right: -1em;
+}
   
 
